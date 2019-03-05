@@ -1,0 +1,18 @@
+<a class="btn btn-success my-3" [routerLink]="['themmoi']" routerLinkActive="router-link-active">Thêm Mới</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Mã NV</th>
+      <th>Họ Tên</th>
+      <th>Năm Sinh</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let nhanvien of danhSachNhanVien'>
+      <td scope="row">{{nhanvien.MaNV}}</td>
+      <td>{{nhanvien.HoTen}}</td>
+      <td>{{nhanvien.NamSinh}}</td>
+    </tr>
+    
+  </tbody>
+</table>

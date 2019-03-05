@@ -23,9 +23,24 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "adminTemplate/vendor/bootstrap/css/bootstrap.min.css",
+              "adminTemplate/vendor/fontawesome-free/css/all.min.css",
+              "adminTemplate/vendor/datatables/dataTables.bootstrap4.css",
+              "adminTemplate/css/sb-admin.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "adminTemplate/vendor/jquery/jquery.min.js",
+              "adminTemplate/vendor/bootstrap/js/bootstrap.bundle.min.js",
+              "adminTemplate/vendor/jquery-easing/jquery.easing.min.js",
+              "adminTemplate/vendor/chart.js/Chart.min.js",
+              "adminTemplate/vendor/datatables/jquery.dataTables.js",
+              "adminTemplate/vendor/datatables/dataTables.bootstrap4.js",
+              "adminTemplate/js/sb-admin.min.js",
+              "adminTemplate/js/demo/datatables-demo.js",
+              "adminTemplate/js/demo/chart-area-demo.js"
+            ]
           },
           "configurations": {
             "production": {

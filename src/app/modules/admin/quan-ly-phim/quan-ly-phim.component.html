@@ -1,0 +1,21 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Mã Phim</th>
+      <th>Tên Phim</th>
+      <th>Hình Ảnh</th>
+      <th>Ngày Khởi Chiếu</th>
+      <th>Mô Tả</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let phim of dsPhim">
+      <td scope="row">{{phim.MaPhim}}</td>
+      <td>{{phim.TenPhim}}</td>
+      <td><img src="{{phim.HinhAnh}}" alt="" width="200px"></td>
+      <td>{{phim.NgayKhoiChieu}}</td>
+      <td>{{phim.MoTa}}</td>
+    </tr>
+   
+  </tbody>
+</table>

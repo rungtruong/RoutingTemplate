@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let phim of dsPhim">
+      <div class="card mt-5 justify-content-center">
+        <img class="card-img-top" src="{{phim.HinhAnh}}" alt="" width="150" height="250">
+        <div class="card-body align-items-stretch">
+          <h4 class="card-title">{{phim.TenPhim}}</h4>
+          <p class="card-text">{{phim.NgayKhoiChieu}}</p>
+          <button type="button" class="btn btn-primary" routerLink="/chitiet/{{phim.MaPhim}}">Chi Tiết</button>
+          <button type="button" class="btn btn-success" routerLink="/chitietphim"
+            [queryParams]='{MaPhim:phim.MaPhim, TenPhim:phim.TenPhim}'>Chi Tiết Phim</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
